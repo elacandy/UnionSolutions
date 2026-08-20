@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#182438"/>
+      <stop offset="70%" stop-color="#101724"/>
+      <stop offset="100%" stop-color="#0B0F17"/>
+    </radialGradient>
+
+    <!-- Outer Rim Gradient -->
+    <linearGradient id="rimGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF4D4D"/>
+      <stop offset="30%" stop-color="#38BDF8"/>
+      <stop offset="70%" stop-color="#1B2A4A"/>
+      <stop offset="100%" stop-color="#FF4D4D"/>
+    </linearGradient>
+
+    <!-- Coral Gradient -->
+    <linearGradient id="coralGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6B6B"/>
+      <stop offset="100%" stop-color="#FF3838"/>
+    </linearGradient>
+
+    <!-- Blue Gradient -->
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+
+    <!-- Soft Glow Filter -->
+    <filter id="badgeGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <!-- Text Path for Circular Typography Top -->
+    <path id="textPathTop" d="M 60,200 A 140,140 0 0,1 340,200" fill="none"/>
+    <!-- Text Path for Circular Typography Bottom -->
+    <path id="textPathBottom" d="M 340,200 A 140,140 0 0,1 60,200" fill="none"/>
+  </defs>
+
+  <!-- Ambient Outer Glow -->
+  <circle cx="200" cy="200" r="185" fill="none" stroke="url(#rimGrad)" stroke-width="3" stroke-dasharray="6 4" opacity="0.8"/>
+  
+  <!-- Outer Ring Shield -->
+  <circle cx="200" cy="200" r="172" fill="url(#bgGrad)" stroke="#38BDF8" stroke-width="2" stroke-opacity="0.4"/>
+  
+  <!-- Inner Border Ring -->
+  <circle cx="200" cy="200" r="148" fill="#151D2A" stroke="#2A364F" stroke-width="1.5"/>
+
+  <!-- Top Circular Text -->
+  <text font-family="'Plus Jakarta Sans', 'Inter', sans-serif" font-size="13" font-weight="800" fill="#38BDF8" letter-spacing="3.5">
+    <textPath href="#textPathTop" startOffset="50%" text-anchor="middle">
+      CERTIFIED RESELLER · CANADIAN TECH
+    </textPath>
+  </text>
+
+  <!-- Bottom Circular Text -->
+  <text font-family="'Plus Jakarta Sans', 'Inter', sans-serif" font-size="12" font-weight="700" fill="#94A3B8" letter-spacing="3">
+    <textPath href="#textPathBottom" startOffset="50%" text-anchor="middle">
+      AUTHORIZED UNION IMPLEMENTATION
+    </textPath>
+  </text>
+
+  <!-- Side Stars / Accents -->
+  <circle cx="58" cy="200" r="3.5" fill="#FF4D4D"/>
+  <circle cx="342" cy="200" r="3.5" fill="#FF4D4D"/>
+
+  <!-- Center Crest Circle -->
+  <circle cx="200" cy="200" r="105" fill="#0B0F17" stroke="url(#rimGrad)" stroke-width="2"/>
+
+  <!-- Center Decorative Shield Glow -->
+  <circle cx="200" cy="200" r="95" fill="rgba(56, 189, 248, 0.05)"/>
+
+  <!-- Iconic Canadian Maple Leaf Centerpiece -->
+  <path d="M200 135 L208 152 L226 149 L221 166 L240 171 L227 186 L239 198 L221 201 L214 218 L203 209 L202 225 L198 225 L197 209 L186 218 L179 201 L161 198 L173 186 L160 171 L179 166 L174 149 L192 152 Z" 
+        fill="url(#coralGrad)" filter="url(#badgeGlow)" />
+
+  <!-- Partnership Interlocking Blocks (The Defined Grip Emblem) -->
+  <g transform="translate(178, 178)">
+    <!-- Left Navy / Blue Block -->
+    <rect x="2" y="10" width="18" height="18" rx="3" fill="#1B2A4A" stroke="#38BDF8" stroke-width="1.5"/>
+    <!-- Right Coral Block -->
+    <rect x="24" y="16" width="18" height="18" rx="3" fill="url(#coralGrad)"/>
+    <!-- Interlocking Handshake Core -->
+    <rect x="14" y="4" width="16" height="14" rx="2" fill="#38BDF8"/>
+  </g>
+
+  <!-- Verified Security Stamp Pill at Base of Center -->
+  <g transform="translate(135, 252)">
+    <rect x="0" y="0" width="130" height="26" rx="13" fill="#151D2A" stroke="#38BDF8" stroke-width="1.5"/>
+    <!-- Checkmark Icon -->
+    <circle cx="16" cy="13" r="7" fill="#38BDF8"/>
+    <path d="M13 13 L15 15 L19 11" stroke="#0B0F17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="30" y="17" font-family="'Plus Jakarta Sans', 'Inter', sans-serif" font-size="10.5" font-weight="800" fill="#F8FAFC" letter-spacing="0.5">VERIFIED 2026</text>
+  </g>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- "The Defined Grip" Standalone Favicon Mark -->
+  <defs>
+    <linearGradient id="coralGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5C5C"/>
+      <stop offset="100%" stop-color="#FF3838"/>
+    </linearGradient>
+    <linearGradient id="navyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22365E"/>
+      <stop offset="100%" stop-color="#141E34"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Left Geometric 'U' Segment (Navy with Electric border accent) -->
+  <path d="M12 14V34C12 43.941 20.059 52 30 52H32V42H30C25.582 42 22 38.418 22 34V14H12Z" fill="url(#navyGrad)" stroke="#38BDF8" stroke-width="1.5" stroke-linejoin="round"/>
+  
+  <!-- Right Geometric 'U' Interlocking Segment (Burnt Orange/Coral) forming handshake negative space -->
+  <path d="M52 50V30C52 20.059 43.941 12 34 12H32V22H34C38.418 22 42 25.582 42 30V50H52Z" fill="url(#coralGrad)"/>
+  
+  <!-- Center Interlocking Grip / Handshake Blocks -->
+  <path d="M22 24H32V34H22V24Z" fill="url(#coralGrad)"/>
+  <path d="M32 30H42V40H32V30Z" fill="url(#navyGrad)" stroke="#38BDF8" stroke-width="1.5" stroke-linejoin="round"/>
+  
+  <!-- Central Grip Negative Space Junction -->
+  <circle cx="32" cy="32" r="2.5" fill="#0B0F17"/>
+</svg>

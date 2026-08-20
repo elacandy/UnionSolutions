@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDEs & Agents
+.idea/
+.vscode/
+*.swp
+*.swo
+.gemini/
+.agents/
+
+# Logs & Node
+*.log
+node_modules/
+dist/
+build/

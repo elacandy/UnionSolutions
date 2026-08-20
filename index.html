@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UnionSolutions — Canadian Technology. Built for Labour. Designed for Unions.</title>
+  
+  <!-- Favicon: The Defined Grip standalone mark -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <!-- Fonts & Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ========================================== -->
+  <!-- HEADER & GLOBAL NAVIGATION                 -->
+  <!-- ========================================== -->
+  <header class="site-header">
+    <div class="nav-container">
+      
+      <!-- Brand Logo: "The Defined Grip" + Typography -->
+      <a class="brand-link" onclick="showPage('home')" title="UnionSolutions Home">
+        <svg class="brand-logo-mark" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="logoCoral" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FF5C5C"/>
+              <stop offset="100%" stop-color="#FF3838"/>
+            </linearGradient>
+            <linearGradient id="logoNavy" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#24375F"/>
+              <stop offset="100%" stop-color="#141E34"/>
+            </linearGradient>
+          </defs>
+          <!-- Left geometric U in Navy with Electric Blue border -->
+          <path d="M12 14V34C12 43.941 20.059 52 30 52H32V42H30C25.582 42 22 38.418 22 34V14H12Z" fill="url(#logoNavy)" stroke="#38BDF8" stroke-width="1.5" stroke-linejoin="round"/>
+          <!-- Right interlocking geometric U in Burnt Orange / Coral -->
+          <path d="M52 50V30C52 20.059 43.941 12 34 12H32V22H34C38.418 22 42 25.582 42 30V50H52Z" fill="url(#logoCoral)"/>
+          <!-- Central Handshake Grip Blocks -->
+          <path d="M22 24H32V34H22V24Z" fill="url(#logoCoral)"/>
+          <path d="M32 30H42V40H32V30Z" fill="url(#logoNavy)" stroke="#38BDF8" stroke-width="1.5" stroke-linejoin="round"/>
+          <circle cx="32" cy="32" r="2.5" fill="#0B0F17"/>
+        </svg>
+        <div class="brand-text-group">
+          <span class="brand-name">Union<span>Solutions</span></span>
+          <span class="brand-subtext">Canadian Union Tech</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="site-nav">
+        <ul>
+          <li><a id="nav-home" class="nav-link active" onclick="showPage('home')">Home</a></li>
+          <li><a id="nav-services" class="nav-link" onclick="showPage('services')">Ecosystem</a></li>
+          <li><a id="nav-contact" class="nav-link" onclick="showPage('contact')">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+          <button class="btn btn-primary btn-sm" onclick="showPage('contact')">Book a Demo</button>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- ========================================== -->
+  <!-- PAGE 1: HOMEPAGE VIEW                      -->
+  <!-- ========================================== -->
+  <main id="page-home" class="page-view active">
+    
+    <!-- Hero Section -->
+    <section class="hero-section container">
+      <div class="trust-badge-pill">
+        <svg class="pill-maple-svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 2.5L13.7 6.1L17.5 5.5L16.5 9.2L20.5 10.3L17.8 13.5L20.5 16.2L16.5 16.8L15 20.5L12.6 18.5L12.5 22H11.5L11.4 18.5L9 20.5L7.5 16.8L3.5 16.2L6.2 13.5L3.5 10.3L7.5 9.2L6.5 5.5L10.3 6.1L12 2.5Z"/>
+        </svg>
+        <span>100% Canadian Owned & Hosted · <strong>Canadian Data Sovereignty</strong></span>
+      </div>
+
+      <div class="hero-tagline">Canadian Technology · Built for Labour · Designed for Unions</div>
+      <h1 class="hero-title">
+        Modernizing & Simplifying <br><span class="highlight-coral">Canadian Union Operations.</span>
+      </h1>
+      <p class="hero-subtitle">
+        We modernize how Canadian unions operate by providing accessible, secure, 100% Canadian-built technology through a single trusted partner. No generic business software—only purpose-built tools designed for union workflows.
+      </p>
+      
+      <div class="cta-group">
+        <button class="btn btn-primary" onclick="showPage('contact')">Schedule Executive Demo &rarr;</button>
+        <button class="btn btn-secondary" onclick="showPage('services')">Explore Our Platforms</button>
+      </div>
+
+      <!-- Core Value Proposition Grid -->
+      <div class="trust-banner-grid">
+        <div class="trust-card">
+          <div class="trust-icon">
+            <svg class="trust-svg maple-color" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2.5L13.7 6.1L17.5 5.5L16.5 9.2L20.5 10.3L17.8 13.5L20.5 16.2L16.5 16.8L15 20.5L12.6 18.5L12.5 22H11.5L11.4 18.5L9 20.5L7.5 16.8L3.5 16.2L6.2 13.5L3.5 10.3L7.5 9.2L6.5 5.5L10.3 6.1L12 2.5Z"/>
+            </svg>
+          </div>
+          <div>
+            <h4 class="trust-title">100% Canadian-Exclusive</h4>
+            <p class="trust-desc">100% Canadian owned. Every vendor and partner in our ecosystem is Canadian-exclusive.</p>
+          </div>
+        </div>
+
+        <div class="trust-card">
+          <div class="trust-icon">
+            <svg class="trust-svg blue-color" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <path d="M9 12l2 2 4-4"/>
+            </svg>
+          </div>
+          <div>
+            <h4 class="trust-title">Data Sovereignty</h4>
+            <p class="trust-desc">Hosted strictly on Canadian soil to maintain complete member privacy and regulatory compliance.</p>
+          </div>
+        </div>
+
+        <div class="trust-card">
+          <div class="trust-icon">
+            <svg class="trust-svg coral-color" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <div>
+            <h4 class="trust-title">Certified Reseller Partner</h4>
+            <p class="trust-desc">Unified implementation, steward training, and dedicated Canadian support under one roof.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <div class="hero-scroll-wrapper">
+        <a href="#services-overview" class="hero-scroll-btn" onclick="scrollToSection('services-overview', event)" aria-label="Scroll down to explore platform suite">
+          <span class="scroll-btn-text">Explore Platform Suite</span>
+          <div class="scroll-mouse-icon">
+            <span class="scroll-mouse-dot"></span>
+          </div>
+          <svg class="scroll-chevron-svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- Core Services Overview Grid -->
+    <section class="services-overview container" id="services-overview">
+      <div class="section-header">
+        <span class="section-tag">Integrated Ecosystem</span>
+        <h2 class="section-title">UnionSolutions Platform Suite</h2>
+        <p class="section-description">Specialized platforms engineered to meet Canadian labor union requirements with zero friction.</p>
+      </div>
+
+      <div class="cards-grid">
+        <!-- Card 1: Union365 -->
+        <article class="card">
+          <div class="card-content">
+            <span class="badge">Union CRM</span>
+            <h3 class="card-title">Union365</h3>
+            <p class="card-text">Centralized member database, grievance tracking, collective agreement indexing, and automated dues administration in one secure hub.</p>
+          </div>
+          <a class="card-link" onclick="showPage('services')">Explore Union365 &rarr;</a>
+        </article>
+
+        <!-- Card 2: Infavour -->
+        <article class="card">
+          <div class="card-content">
+            <span class="badge badge-blue">Voting Platform</span>
+            <h3 class="card-title">Infavour</h3>
+            <p class="card-text">Legally compliant electronic voting, ratification polling, secret ballots, and secure online elections built specifically for unions.</p>
+          </div>
+          <a class="card-link" href="https://infavour.ca/" target="_blank" rel="noopener">Visit Infavour.ca &rarr;</a>
+        </article>
+
+        <!-- Card 3: Member Data -->
+        <article class="card">
+          <div class="card-content">
+            <span class="badge">Data Engine</span>
+            <h3 class="card-title">Member Data</h3>
+            <p class="card-text">Dedicated secure repository for member files, contract archives, steward access controls, and custom executive reporting.</p>
+          </div>
+          <a class="card-link" onclick="showPage('services')">Learn More &rarr;</a>
+        </article>
+
+        <!-- Card 4: Union Inbox -->
+        <article class="card">
+          <div class="card-content">
+            <span class="badge badge-blue">Communications</span>
+            <h3 class="card-title">Union Inbox</h3>
+            <p class="card-text">Centralized messaging platform delivering high-delivery broadcast SMS, mass email dispatch, and member inquiry routing.</p>
+          </div>
+          <a class="card-link" href="https://unioninbox.ca/" target="_blank" rel="noopener">Visit UnionInbox.ca &rarr;</a>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================== -->
+  <!-- PAGE 2: SERVICES PAGE VIEW                 -->
+  <!-- ========================================== -->
+  <main id="page-services" class="page-view container">
+    
+    <header class="section-header">
+      <span class="section-tag">Canadian Technology Suite</span>
+      <h1 class="section-title large">Our Software Ecosystem</h1>
+      <p class="section-description">UnionSolutions acts as your certified implementation partner and reseller for best-in-class union technologies. Each tool operates independently or seamlessly together with full Canadian data residency.</p>
+    </header>
+
+    <div class="services-list">
+      
+      <!-- Slot 1: Union365 -->
+      <section class="card service-detail-card">
+        <span class="badge">01 / CORE UNION CRM</span>
+        <h2 class="service-heading">Union365</h2>
+        <p class="service-body">The central operating system for modern union halls. Union365 replaces fragmented spreadsheets and paper binders with real-time digital organization designed around union constitutions.</p>
+        <ul class="feature-list">
+          <li>Searchable grievance tracking with strict deadline alerts and escalation workflows</li>
+          <li>Automated dues tracking, check-off reconciliation, and financial auditing</li>
+          <li>Collective agreement clause indexing, search, and historical precedence archives</li>
+        </ul>
+        <div class="cta-group" style="justify-content: flex-start;">
+          <a href="https://union365.ca/" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Visit Union365.ca &rarr;</a>
+          <button class="btn btn-primary btn-sm" onclick="showPage('contact')">Request Union365 Demo</button>
+        </div>
+      </section>
+
+      <!-- Slot 2: Infavour -->
+      <section class="card service-detail-card">
+        <span class="badge badge-blue">02 / ELECTRONIC VOTING & RATIFICATION</span>
+        <h2 class="service-heading">Infavour</h2>
+        <p class="service-body">Empower your membership with instant, tamper-proof democratic voting. Infavour makes bargaining ratifications, strike votes, and executive elections seamless and legally compliant.</p>
+        <ul class="feature-list">
+          <li>Audited, verifiable election results with cryptographic ballot secrecy</li>
+          <li>Mobile-first voting interface accessible to every member anywhere in Canada</li>
+          <li>High-security single-use voter token authentication and participation tracking</li>
+        </ul>
+        <div class="cta-group" style="justify-content: flex-start;">
+          <a href="https://infavour.ca/" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Visit Infavour.ca &rarr;</a>
+          <button class="btn btn-primary btn-sm" onclick="showPage('contact')">Schedule Voting Consultation</button>
+        </div>
+      </section>
+
+      <!-- Slot 3: Member Data -->
+      <section class="card service-detail-card">
+        <span class="badge">03 / SOVEREIGN DATA PORTAL</span>
+        <h2 class="service-heading">Member Data</h2>
+        <p class="service-body">A dedicated, privacy-focused Canadian data platform for maintaining accurate member rosters, workplace unit allocations, and steward credentials without vendor lock-in.</p>
+        <ul class="feature-list">
+          <li>Self-service member portal for address, contact, and beneficiary updates</li>
+          <li>Granular role-based access permissions tailored for shop stewards and business agents</li>
+          <li>Encrypted Canadian document vault for bargaining notes and confidential files</li>
+        </ul>
+        <button class="btn btn-secondary fit-btn" onclick="showPage('contact')">Inquire About Member Data &rarr;</button>
+      </section>
+
+      <!-- Slot 4: Union Inbox -->
+      <section class="card service-detail-card">
+        <span class="badge badge-blue">04 / DIRECT DISPATCH & MESSAGING</span>
+        <h2 class="service-heading">Union Inbox</h2>
+        <p class="service-body">Cut through the noise with direct broadcast messaging. Reach your members instantly on their mobile phones during critical bargaining updates, emergency notices, or strike authorizations.</p>
+        <ul class="feature-list">
+          <li>Mass SMS alert dispatches with industry-leading Canadian delivery rates</li>
+          <li>Centralized shared inbox for organizing and routing member inquiries to stewards</li>
+          <li>Segmented broadcast lists by employer unit, bargaining group, or local chapter</li>
+        </ul>
+        <div class="cta-group" style="justify-content: flex-start;">
+          <a href="https://unioninbox.ca/" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Visit UnionInbox.ca &rarr;</a>
+          <button class="btn btn-primary btn-sm" onclick="showPage('contact')">Request Messaging Demo</button>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Data Sovereignty Callout Banner -->
+    <div class="sovereignty-callout">
+      <div class="sovereignty-text">
+        <div class="sovereignty-title-row">
+          <svg class="sovereignty-maple-svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2.5L13.7 6.1L17.5 5.5L16.5 9.2L20.5 10.3L17.8 13.5L20.5 16.2L16.5 16.8L15 20.5L12.6 18.5L12.5 22H11.5L11.4 18.5L9 20.5L7.5 16.8L3.5 16.2L6.2 13.5L3.5 10.3L7.5 9.2L6.5 5.5L10.3 6.1L12 2.5Z"/>
+          </svg>
+          <h3>100% Canadian Hosted & Compliant</h3>
+        </div>
+        <p>Unlike US-based generic platforms, all UnionSolutions products ensure your member records, ballots, and communications remain strictly under Canadian jurisdiction.</p>
+      </div>
+      <button class="btn btn-primary fit-btn" onclick="showPage('contact')">Speak with a Specialist</button>
+    </div>
+
+  </main>
+
+  <!-- ========================================== -->
+  <!-- PAGE 3: CONTACT PAGE VIEW                  -->
+  <!-- ========================================== -->
+  <main id="page-contact" class="page-view container">
+    
+    <header class="section-header align-left">
+      <span class="section-tag">Direct Union Consultation</span>
+      <h1 class="section-title large">Let's Modernize Your Union's Technology</h1>
+      <p class="section-description">Speak directly with a UnionSolutions certified specialist to evaluate how our suite fits your union's exact workflow, bargaining schedules, and governance structure.</p>
+    </header>
+
+    <div class="contact-grid">
+      
+      <!-- Lead Capture Form -->
+      <section class="card form-card">
+        <form id="contact-form" onsubmit="handleFormSubmit(event)">
+          <div class="form-group">
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" placeholder="e.g. Jane Doe" required>
+          </div>
+
+          <div class="form-group">
+            <label for="union-name">Union / Organization Name</label>
+            <input type="text" id="union-name" placeholder="e.g. CUPE, USW, Unifor, IBEW, Teamsters" required>
+          </div>
+
+          <div class="form-group">
+            <label for="user-role">Your Role within the Union</label>
+            <input type="text" id="user-role" placeholder="e.g. President, Business Agent, Chief Steward, Executive Member" required>
+          </div>
+
+          <div class="form-group">
+            <label for="work-email">Official Union / Work Email</label>
+            <input type="email" id="work-email" placeholder="jane@unionlocal.ca" required>
+          </div>
+
+          <div class="form-group">
+            <label>Platforms of Interest (Select all that apply)</label>
+            <div class="checkbox-grid">
+              <label class="checkbox-item"><input type="checkbox" name="platform" value="union365" checked> Union365 (CRM)</label>
+              <label class="checkbox-item"><input type="checkbox" name="platform" value="infavour"> Infavour (Voting)</label>
+              <label class="checkbox-item"><input type="checkbox" name="platform" value="memberdata"> Member Data Portal</label>
+              <label class="checkbox-item"><input type="checkbox" name="platform" value="unioninbox"> Union Inbox (SMS/Email)</label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary full-width">Request Executive Consultation</button>
+        </form>
+
+        <!-- Form feedback container -->
+        <div id="form-feedback" class="form-notification"></div>
+      </section>
+
+      <!-- Sidebar Consultation Info -->
+      <aside class="contact-sidebar">
+        
+        <!-- Certified Reseller Trust Badge Card -->
+        <div class="card info-box certified-badge-card">
+          <div class="certified-badge-header">
+            <div class="reseller-seal">
+              <svg class="reseller-seal-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Outer glow circle -->
+                <circle cx="50" cy="50" r="46" stroke="url(#sealBorderGradient)" stroke-width="2.5" stroke-dasharray="3 3" />
+                <!-- Inner solid border -->
+                <circle cx="50" cy="50" r="41" stroke="#38BDF8" stroke-width="1.5" />
+                <!-- Inner slate background -->
+                <circle cx="50" cy="50" r="39" fill="#151D2A" />
+                
+                <!-- Maple leaf center -->
+                <path d="M50 20L53.4 27.2L61 26L59 33.4L67 35.6L61.6 42L67 47.4L59 48.6L56 56L51.2 52L51 59H49L48.8 52L44 56L41 48.6L33 47.4L38.4 42L33 35.6L41 33.4L39 26L46.6 27.2L50 20Z" fill="#FF4D4D" />
+                
+                <!-- Partnership handshake grip geometric overlay in blue/navy -->
+                <rect x="42" y="44" width="7" height="7" rx="1.5" fill="#38BDF8" />
+                <rect x="51" y="44" width="7" height="7" rx="1.5" fill="#1B2A4A" stroke="#38BDF8" stroke-width="1" />
+                
+                <!-- Verified Checkmark Badge at bottom -->
+                <circle cx="50" cy="74" r="10" fill="#38BDF8" />
+                <path d="M46 74L49 77L55 71" stroke="#0B0F17" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                
+                <defs>
+                  <linearGradient id="sealBorderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#FF4D4D" />
+                    <stop offset="50%" stop-color="#38BDF8" />
+                    <stop offset="100%" stop-color="#FF4D4D" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="certified-badge-titles">
+              <span class="certified-tag">Authorized Partner</span>
+              <h3 class="certified-title">Certified Reseller</h3>
+              <p class="certified-sub">Official Canadian Union Tech Partner</p>
+            </div>
+          </div>
+          
+          <div class="certified-specs">
+            <div class="spec-item">
+              <svg class="spec-check" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <span><strong>Authorized Suite:</strong> Official provider for Union365, Infavour, Member Data & Union Inbox</span>
+            </div>
+            <div class="spec-item">
+              <svg class="spec-check" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <span><strong>Data Sovereignty:</strong> 100% Canadian data residency & PIPEDA compliance guarantee</span>
+            </div>
+            <div class="spec-item">
+              <svg class="spec-check" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <span><strong>Turnkey Onboarding:</strong> Full data migration assistance and dedicated steward training</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Consultation & Implementation Process -->
+        <div class="card info-box process-box">
+          <h3>Consultation Process</h3>
+          <div class="process-steps">
+            <div class="process-step">
+              <div class="step-num">1</div>
+              <div class="step-info">
+                <strong>Workflow Assessment</strong>
+                <p>We review your current grievance logs, membership databases, and communication channels.</p>
+              </div>
+            </div>
+            <div class="process-step">
+              <div class="step-num">2</div>
+              <div class="step-info">
+                <strong>Tailored Live Demo</strong>
+                <p>An executive walkthrough configured around your union constitution, bargaining cycles, and voting rules.</p>
+              </div>
+            </div>
+            <div class="process-step">
+              <div class="step-num">3</div>
+              <div class="step-info">
+                <strong>Turnkey Implementation</strong>
+                <p>Seamless data migration from legacy spreadsheets, custom staff training, and live launch support.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Why Partner Box -->
+        <div class="card info-box">
+          <h3>Why Partner With UnionSolutions?</h3>
+          <ul class="feature-list">
+            <li><strong>100% Canadian Owned:</strong> No foreign parent entities or offshore data transfers.</li>
+            <li><strong>Dedicated Implementation:</strong> Full data migration and tailored onboarding for veteran union staff.</li>
+            <li><strong>Purpose-Built:</strong> Engineered specifically for Canadian labor relations laws and constitutions.</li>
+          </ul>
+        </div>
+
+      </aside>
+
+    </div>
+
+  </main>
+
+  <!-- ========================================== -->
+  <!-- FOOTER                                     -->
+  <!-- ========================================== -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <svg class="brand-logo-mark" style="width: 28px; height: 28px;" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="ftCoral" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FF5C5C"/>
+              <stop offset="100%" stop-color="#FF3838"/>
+            </linearGradient>
+            <linearGradient id="ftNavy" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#24375F"/>
+              <stop offset="100%" stop-color="#141E34"/>
+            </linearGradient>
+          </defs>
+          <path d="M12 14V34C12 43.941 20.059 52 30 52H32V42H30C25.582 42 22 38.418 22 34V14H12Z" fill="url(#ftNavy)" stroke="#38BDF8" stroke-width="1.5"/>
+          <path d="M52 50V30C52 20.059 43.941 12 34 12H32V22H34C38.418 22 42 25.582 42 30V50H52Z" fill="url(#ftCoral)"/>
+          <path d="M22 24H32V34H22V24Z" fill="url(#ftCoral)"/>
+          <path d="M32 30H42V40H32V30Z" fill="url(#ftNavy)" stroke="#38BDF8" stroke-width="1.5"/>
+        </svg>
+        <span class="brand-name" style="font-size: 1.15rem;">Union<span>Solutions</span></span>
+      </div>
+
+      <div class="footer-badge">
+        <svg class="footer-maple-svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 2.5L13.7 6.1L17.5 5.5L16.5 9.2L20.5 10.3L17.8 13.5L20.5 16.2L16.5 16.8L15 20.5L12.6 18.5L12.5 22H11.5L11.4 18.5L9 20.5L7.5 16.8L3.5 16.2L6.2 13.5L3.5 10.3L7.5 9.2L6.5 5.5L10.3 6.1L12 2.5Z"/>
+        </svg>
+        <span>100% Canadian Owned & Operated</span> · <span>Canadian Data Residency Guaranteed</span>
+      </div>
+
+      <p class="footer-copyright">
+        &copy; 2026 UnionSolutions. All rights reserved. Canadian technology. Built for labour. Designed for unions.
+      </p>
+    </div>
+  </footer>
+
+  <!-- External Script File -->
+  <script src="script.js"></script>
+</body>
+</html>
