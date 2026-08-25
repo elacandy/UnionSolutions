@@ -367,69 +367,49 @@ body::before {
   line-height: 1.4;
 }
 
-/* Scroll Mouse Indicator */
+/* Scroll Down CTA Button */
 .hero-scroll-wrapper {
   display: flex;
   justify-content: center;
-  margin: 20px 0 12px;
+  margin: 54px 0 28px;
 }
 
 .hero-scroll-btn {
   display: inline-flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  gap: 6px;
-  color: var(--text-muted);
+  gap: 10px;
+  color: var(--text-secondary);
   text-decoration: none;
-  font-size: 0.78rem;
+  font-size: 0.88rem;
   font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+  letter-spacing: 0.03em;
   cursor: pointer;
-  padding: 8px 16px;
+  padding: 12px 28px;
   border-radius: 999px;
   transition: all 0.25s ease;
-  background: rgba(21, 29, 42, 0.4);
-  border: 1px solid rgba(42, 54, 79, 0.5);
+  background: rgba(21, 29, 42, 0.7);
+  border: 1px solid var(--bg-border);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.3);
 }
 
 .hero-scroll-btn:hover {
   color: var(--brand-blue);
   border-color: var(--brand-blue);
-  background: rgba(21, 29, 42, 0.9);
-  box-shadow: 0 4px 16px var(--brand-blue-glow);
+  background: rgba(21, 29, 42, 0.95);
+  box-shadow: 0 6px 22px var(--brand-blue-glow);
   transform: translateY(2px);
 }
 
-.scroll-mouse-icon {
-  width: 18px;
-  height: 28px;
-  border: 2px solid currentColor;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  padding-top: 4px;
-}
-
-.scroll-mouse-dot {
-  width: 3px;
-  height: 6px;
-  background-color: currentColor;
-  border-radius: 2px;
-  animation: mouseScrollDot 1.6s cubic-bezier(0.65, 0, 0.35, 1) infinite;
-}
-
-.scroll-chevron-svg { animation: chevronBounce 1.6s ease-in-out infinite; }
-
-@keyframes mouseScrollDot {
-  0% { opacity: 1; transform: translateY(0); }
-  60% { opacity: 0; transform: translateY(10px); }
-  100% { opacity: 0; transform: translateY(0); }
+.scroll-chevron-svg {
+  color: var(--brand-blue);
+  flex-shrink: 0;
+  animation: chevronBounce 1.8s ease-in-out infinite;
 }
 
 @keyframes chevronBounce {
   0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(4px); }
+  50% { transform: translateY(3px); }
 }
 
 /* Sections & Cards */
