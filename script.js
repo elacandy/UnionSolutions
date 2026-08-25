@@ -1,7 +1,9 @@
 /**
- * Page routing & tab switching
+ * Page routing & tab switching with optional target section scroll
+ * @param {string} pageId - Target page identifier ('home', 'services', 'contact')
+ * @param {string} [targetSectionId] - Optional element ID to scroll to after page switch
  */
-function showPage(pageId) {
+function showPage(pageId, targetSectionId) {
   document.querySelectorAll('.page-view').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
 
@@ -11,7 +13,24 @@ function showPage(pageId) {
   if (targetPage) targetPage.classList.add('active');
   if (targetNav) targetNav.classList.add('active');
 
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  if (targetSectionId) {
+    setTimeout(() => {
+      const el = document.getElementById(targetSectionId);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 60);
+  } else {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+}
+
+/**
+ * Direct navigation from Home Page cards to specific software sections on Ecosystem page
+ * @param {string} serviceKey - 'union365', 'infavour', 'membermate', 'unioninbox'
+ */
+function navigateToService(serviceKey) {
+  showPage('services', 'service-' + serviceKey);
 }
 
 /**

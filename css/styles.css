@@ -243,7 +243,7 @@ body::before {
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
   width: fit-content;
 }
 
@@ -474,7 +474,7 @@ body::before {
   background-color: var(--bg-surface);
   border: 1px solid var(--bg-border);
   border-radius: 12px;
-  padding: 30px;
+  padding: 28px;
   box-shadow: var(--card-shadow);
   display: flex;
   flex-direction: column;
@@ -503,6 +503,36 @@ body::before {
 
 .card:hover::before {
   background: linear-gradient(90deg, transparent, var(--brand-blue), transparent);
+}
+
+/* Card Logo Containers */
+.card-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.96);
+  padding: 8px 14px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  height: 52px;
+  width: fit-content;
+  max-width: 100%;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover .card-logo-container {
+  transform: scale(1.02);
+  box-shadow: 0 4px 16px rgba(56, 189, 248, 0.25);
+}
+
+.card-logo-img {
+  max-height: 34px;
+  max-width: 140px;
+  width: auto;
+  object-fit: contain;
+  display: block;
 }
 
 .card-title {
@@ -550,16 +580,47 @@ body::before {
   align-items: flex-start;
   padding: 36px;
   border-left: 3px solid var(--brand-accent);
+  scroll-margin-top: 100px;
 }
 
 .service-detail-card:nth-child(even) { border-left-color: var(--brand-blue); }
+
+.service-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.service-logo-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.96);
+  padding: 8px 18px;
+  border-radius: 10px;
+  height: 52px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.service-logo-img {
+  max-height: 34px;
+  max-width: 160px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
 
 .service-heading {
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 1.85rem;
   font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: 12px;
+  margin-bottom: 4px;
 }
 
 .service-body {
@@ -953,4 +1014,9 @@ body::before {
   .checkbox-grid { grid-template-columns: 1fr; }
   .cta-group { flex-direction: column; width: 100%; }
   .cta-group .btn { width: 100%; }
+  .service-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
 }
