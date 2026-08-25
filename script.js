@@ -11,7 +11,11 @@ function showPage(pageId, targetSectionId) {
   const targetNav = document.getElementById('nav-' + pageId);
 
   if (targetPage) targetPage.classList.add('active');
-  if (targetNav) targetNav.classList.add('active');
+  if (targetNav) {
+    targetNav.classList.add('active');
+  } else if (['union365', 'infavour', 'membermate', 'unioninbox'].includes(pageId)) {
+    document.getElementById('nav-services')?.classList.add('active');
+  }
 
   if (targetSectionId) {
     setTimeout(() => {
