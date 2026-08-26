@@ -5,7 +5,7 @@
 
 ---
 
-## 🍁 PART 1: UNION SOLUTIONS BRAND BOOK
+## PART 1: UNION SOLUTIONS BRAND BOOK
 
 ### 1. Brand Identity & Positioning
 
@@ -69,22 +69,22 @@ The UI features **Strictly Dark Mode** to align with modern, sleek SaaS aestheti
 
 ---
 
-## 🛠️ THE UNIONSOLUTIONS ECOSYSTEM
+## THE UNIONSOLUTIONS ECOSYSTEM
 
 The platform brings together four best-in-class standalone platforms:
 
-1. **Union365 (Core Union CRM)**
-   * Centralized member database, grievance tracking, deadline automation, contract indexing, and dues management.
-2. **Infavour (Electronic Voting & Ratification)**
-   * Legally compliant electronic voting, secret ballots, strike authorization votes, and AGM executive elections.
-3. **Member Data (Data Sovereignty Engine & Portal)**
-   * Secure, privacy-first repository for member profiles, steward access delegation, and encrypted document storage.
-4. **Union Inbox (Direct Member Communications)**
-   * High-delivery mass SMS dispatches, email broadcasts, and organized inquiry routing during bargaining campaigns.
+1. **Union365 (Complete Union Management)**
+   * Centralized member database, grievance tracking, deadline automation, contract clause indexing, and dues reconciliation.
+2. **InFavour (Digital Voting & Engagement)**
+   * Legally compliant electronic voting, secret ballots, contract ratification votes, strike authorizations, and executive elections.
+3. **MemberMate (Member Support & 24/7 Virtual Assistant)**
+   * 24/7 virtual assistant providing instant answers about collective agreements, workplace rights, and union resources without replacing reps.
+4. **Union Inbox (Direct Dispatch & Communications)**
+   * Canadian-hosted email platform with guaranteed deliverability, collaborative team inboxes, and permanent legacy mailboxes.
 
 ---
 
-## 🚀 Website Structure & Files
+## Website Structure & Files
 
 ```text
 quinnWebsite/
