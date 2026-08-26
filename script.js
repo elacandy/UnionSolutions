@@ -1,20 +1,45 @@
 /**
- * Page routing & tab switching with optional target section scroll
- * @param {string} pageId - Target page identifier ('home', 'services', 'contact')
- * @param {string} [targetSectionId] - Optional element ID to scroll to after page switch
+ * UnionSolutions Page Routing & Deep Linking System
  */
-function showPage(pageId, targetSectionId) {
+
+const VALID_PAGES = ['home', 'services', 'contact', 'union365', 'infavour', 'membermate', 'unioninbox'];
+
+/**
+ * Page routing & tab switching with optional target section scroll
+ * @param {string} pageId - Target page identifier ('home', 'services', 'contact', 'union365', 'infavour', 'membermate', 'unioninbox')
+ * @param {string} [targetSectionId] - Optional element ID to scroll to after page switch
+ * @param {boolean} [updateHistory=true] - Whether to update browser URL hash
+ */
+function showPage(pageId, targetSectionId, updateHistory = true) {
+  const cleanId = (pageId || 'home').replace(/^#/, '').replace(/^page-/, '').toLowerCase();
+  const targetId = VALID_PAGES.includes(cleanId) ? cleanId : 'home';
+
   document.querySelectorAll('.page-view').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
 
-  const targetPage = document.getElementById('page-' + pageId);
-  const targetNav = document.getElementById('nav-' + pageId);
+  const targetPage = document.getElementById('page-' + targetId);
+  const targetNav = document.getElementById('nav-' + targetId);
 
-  if (targetPage) targetPage.classList.add('active');
+  if (targetPage) {
+    targetPage.classList.add('active');
+  }
+
   if (targetNav) {
     targetNav.classList.add('active');
-  } else if (['union365', 'infavour', 'membermate', 'unioninbox'].includes(pageId)) {
+  } else if (['union365', 'infavour', 'membermate', 'unioninbox'].includes(targetId)) {
     document.getElementById('nav-services')?.classList.add('active');
+  }
+
+  // Update browser URL hash for shareable deep links
+  if (updateHistory) {
+    const hash = targetId === 'home' ? '' : '#' + targetId;
+    if (window.location.hash !== hash) {
+      if (window.history && window.history.pushState) {
+        window.history.pushState(null, '', hash || window.location.pathname);
+      } else {
+        window.location.hash = hash;
+      }
+    }
   }
 
   if (targetSectionId) {
@@ -34,7 +59,7 @@ function showPage(pageId, targetSectionId) {
  * @param {string} serviceKey - 'union365', 'infavour', 'membermate', 'unioninbox'
  */
 function navigateToService(serviceKey) {
-  showPage('services', 'service-' + serviceKey);
+  showPage(serviceKey);
 }
 
 /**
@@ -45,6 +70,20 @@ function scrollToSection(sectionId, event) {
   const el = document.getElementById(sectionId) || document.querySelector('.' + sectionId);
   if (el) el.scrollIntoView({ behavior: 'smooth' });
 }
+
+/**
+ * Initialize page based on URL hash on load
+ */
+function handleHashRouting() {
+  const rawHash = window.location.hash.replace(/^#/, '').replace(/^page-/, '');
+  if (rawHash && VALID_PAGES.includes(rawHash.toLowerCase())) {
+    showPage(rawHash.toLowerCase(), null, false);
+  }
+}
+
+window.addEventListener('DOMContentLoaded', handleHashRouting);
+window.addEventListener('hashchange', handleHashRouting);
+window.addEventListener('popstate', handleHashRouting);
 
 /**
  * Contact form submission handler
