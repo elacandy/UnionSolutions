@@ -34,11 +34,7 @@ function showPage(pageId, targetSectionId, updateHistory = true) {
   if (updateHistory) {
     const hash = targetId === 'home' ? '' : '#' + targetId;
     if (window.location.hash !== hash) {
-      if (window.history && window.history.pushState) {
-        window.history.pushState(null, '', hash || window.location.pathname);
-      } else {
-        window.location.hash = hash;
-      }
+      window.location.hash = hash;
     }
   }
 
@@ -75,13 +71,19 @@ function scrollToSection(sectionId, event) {
  * Initialize page based on URL hash on load
  */
 function handleHashRouting() {
-  const rawHash = window.location.hash.replace(/^#/, '').replace(/^page-/, '');
+  const rawHash = (window.location.hash || '').replace(/^#/, '').replace(/^page-/, '');
   if (rawHash && VALID_PAGES.includes(rawHash.toLowerCase())) {
     showPage(rawHash.toLowerCase(), null, false);
   }
 }
 
-window.addEventListener('DOMContentLoaded', handleHashRouting);
+// Execute immediately upon script load and bind all lifecycle events
+if (document.readyState === 'loading') {
+  window.addEventListener('DOMContentLoaded', handleHashRouting);
+} else {
+  handleHashRouting();
+}
+window.addEventListener('load', handleHashRouting);
 window.addEventListener('hashchange', handleHashRouting);
 window.addEventListener('popstate', handleHashRouting);
 
