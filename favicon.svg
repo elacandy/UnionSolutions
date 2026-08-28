@@ -1,26 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
-  <!-- "The Defined Grip" Standalone Favicon Mark -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 130" fill="none">
+  <!-- UnionSolutions — "The Defined Grip" Standalone Handshake 'U' Favicon Mark -->
   <defs>
     <linearGradient id="coralGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#FF5C5C"/>
       <stop offset="100%" stop-color="#FF3838"/>
     </linearGradient>
     <linearGradient id="navyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#22365E"/>
+      <stop offset="0%" stop-color="#24375F"/>
       <stop offset="100%" stop-color="#141E34"/>
     </linearGradient>
   </defs>
   
-  <!-- Left Geometric 'U' Segment (Navy with Electric border accent) -->
-  <path d="M12 14V34C12 43.941 20.059 52 30 52H32V42H30C25.582 42 22 38.418 22 34V14H12Z" fill="url(#navyGrad)" stroke="#38BDF8" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Left Geometric 'U' Segment / Navy Arm with Electric Border Accent -->
+  <path d="M 20 12 H 38 V 52 C 38 57.5, 43 62, 50 65 C 53.5 66.5, 56 68, 57.5 69.5 L 81 87 A 2.5 2.5 0 0 1 78.5 91.5 L 57 75 L 55.5 76.5 L 76.5 92.5 A 2.5 2.5 0 0 1 74 97 L 52.5 80.5 L 51 82 L 71.5 97.5 A 2.5 2.5 0 0 1 69 102 L 48 85.5 L 46.5 87 L 66 102.5 A 2.5 2.5 0 0 1 63.5 107 L 44 91.5 C 42 93.5, 36 99, 29 90 C 23.5 82, 20.5 73, 20 62 Z" fill="url(#navyGrad)" stroke="#38BDF8" stroke-width="1.2" stroke-linejoin="round"/>
   
-  <!-- Right Geometric 'U' Interlocking Segment (Burnt Orange/Coral) forming handshake negative space -->
-  <path d="M52 50V30C52 20.059 43.941 12 34 12H32V22H34C38.418 22 42 25.582 42 30V50H52Z" fill="url(#coralGrad)"/>
+  <!-- Right Geometric 'U' Interlocking Segment / Burnt Orange Thumb & Body -->
+  <path d="M 100 12 H 82 V 52 C 82 56.5, 72 60, 56 61 C 48 61.5, 43 64.5, 43.5 69 C 44 73.5, 49 75, 56 74.5 C 62 74, 67.5 75, 72.5 79.5 C 76.5 83.5, 80 87, 83.5 91 C 89.5 85, 96 76, 99 65 C 100 61, 100 56, 100 52 Z" fill="url(#coralGrad)"/>
   
-  <!-- Center Interlocking Grip / Handshake Blocks -->
-  <path d="M22 24H32V34H22V24Z" fill="url(#coralGrad)"/>
-  <path d="M32 30H42V40H32V30Z" fill="url(#navyGrad)" stroke="#38BDF8" stroke-width="1.5" stroke-linejoin="round"/>
-  
-  <!-- Central Grip Negative Space Junction -->
-  <circle cx="32" cy="32" r="2.5" fill="#0B0F17"/>
+  <!-- Interlocking Knuckles wrapping around from underneath -->
+  <path d="M 21.5 72 C 19.5 74.5, 19 78, 21 81 C 22.5 83.5, 25.5 84, 28 82 C 29 81.5, 30.5 84, 32 87 C 34 90, 37.5 90.5, 40 88.5 C 41 88, 42.5 90.5, 44 93.5 C 46 96.5, 49.5 97, 52 95 C 53 94.5, 54.5 97, 56 100 C 58 103, 62 103.5, 64 100.5 C 65.5 97.5, 63 94, 58 91.5 L 53 87.5 C 48 83.5, 42 78.5, 36.5 74 C 32 70.5, 26 69, 21.5 72 Z" fill="url(#coralGrad)"/>
 </svg>
