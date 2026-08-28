@@ -558,46 +558,62 @@ body::before {
   transform: translateX(4px);
 }
 
-/* Service Detail Cards (on Services Page) */
+/* Service Detail Cards (on Ecosystem Page: Full-Width Stacked Cards) */
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-top: 36px;
+  width: 100%;
+}
+
 .service-detail-card {
   align-items: flex-start;
   padding: 36px;
   border-left: 3px solid var(--brand-accent);
   scroll-margin-top: 100px;
+  width: 100%;
 }
+.service-detail-card:nth-child(even) {
+  border-left-color: var(--brand-blue);
+}
+
 .service-header-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 .service-heading {
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 1.6rem;
   font-weight: 800;
   color: var(--text-primary);
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
-.services-list {
+.service-body {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 20px;
+  max-width: 1000px;
+}
+
+.services-list .feature-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
+  gap: 12px 28px;
   list-style: none;
-  margin-bottom: 28px;
-  width: 100%;
-}
-.services-list .feature-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
   margin-bottom: 24px;
+  width: 100%;
 }
 .services-list .feature-list li {
   position: relative;
   padding-left: 20px;
-  font-size: 0.9rem;
+  font-size: 0.92rem;
   color: var(--text-secondary);
   line-height: 1.5;
 }
@@ -609,12 +625,17 @@ body::before {
   font-size: 1.2rem;
   line-height: 1;
 }
+.service-detail-card:nth-child(even) .feature-list li::before {
+  color: var(--brand-blue);
+}
+
 .service-action-row {
   display: flex;
   gap: 16px;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
+  margin-top: auto;
 }
 
 /* Service Detail Hubs */
@@ -1295,7 +1316,7 @@ body::before {
 
 @media (max-width: 768px) {
   .site-nav { display: none; }
-  .services-list { grid-template-columns: 1fr; }
+  .services-list .feature-list { grid-template-columns: 1fr; }
   .value-pillars-grid, .flow-steps-grid { grid-template-columns: 1fr; }
   .form-row, .checkbox-grid { grid-template-columns: 1fr; }
 }
