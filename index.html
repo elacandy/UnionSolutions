@@ -11,9 +11,66 @@
   <!-- Fonts & Stylesheet -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=2.2">
+  <link rel="stylesheet" href="css/styles.css?v=3.0">
 </head>
 <body>
+    <!-- SVG Icon Sprite Definition -->
+  <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="icon-maple" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 2.5L13.7 6.1L17.5 5.5L16.5 9.2L20.5 10.3L17.8 13.5L20.5 16.2L16.5 16.8L15 20.5L12.6 18.5L12.5 22H11.5L11.4 18.5L9 20.5L7.5 16.8L3.5 16.2L6.2 13.5L3.5 10.3L7.5 9.2L6.5 5.5L10.3 6.1L12 2.5Z"/>
+    </symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="20 6 9 17 4 12"/>
+    </symbol>
+    <symbol id="icon-check-solid" viewBox="0 0 20 20" fill="currentColor">
+      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+    </symbol>
+    <symbol id="icon-back" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/>
+    </symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/>
+    </symbol>
+    <symbol id="icon-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+    </symbol>
+    <symbol id="icon-chevron-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="6 9 12 15 18 9"/>
+    </symbol>
+    <symbol id="icon-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+    </symbol>
+    <symbol id="icon-server" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/>
+    </symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+    </symbol>
+    <symbol id="icon-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/>
+    </symbol>
+    <symbol id="icon-database" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+    </symbol>
+    <symbol id="icon-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>
+    </symbol>
+    <symbol id="icon-bot" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/><line x1="8" y1="16" x2="8.01" y2="16"/><line x1="16" y1="16" x2="16.01" y2="16"/>
+    </symbol>
+    <symbol id="icon-vote" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+    </symbol>
+    <symbol id="icon-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+    </symbol>
+    <symbol id="icon-reseller" viewBox="0 0 100 100" fill="none">
+      <circle cx="50" cy="50" r="46" stroke="#38BDF8" stroke-width="2" stroke-dasharray="4 3"/>
+      <circle cx="50" cy="50" r="40" fill="#151D2A" stroke="#2A364F" stroke-width="1.5"/>
+      <path d="M50 24L53.7 32.1L62.5 30.5L60.5 39.2L68.5 42.3L63.8 49.5L68.5 56.2L60.5 57.8L57 65.5L50.6 60.5L50.5 68H49.5L49.4 60.5L43 65.5L39.5 57.8L31.5 56.2L36.2 49.5L31.5 42.3L39.5 39.2L37.5 30.5L46.3 32.1L50 24Z" fill="#FF4D4D"/>
+      <text x="50" y="80" text-anchor="middle" fill="#F8FAFC" font-size="7.5" font-weight="700" letter-spacing="1">CERTIFIED RESELLER</text>
+    </symbol>
+  </svg>
 
   <!-- ========================================== -->
   <!-- HEADER & GLOBAL NAVIGATION                 -->
@@ -70,9 +127,7 @@
     <!-- Hero Section -->
     <section class="hero-section container">
       <div class="trust-badge-pill">
-        <svg class="pill-maple-svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <path d="M12 2.5L13.7 6.1L17.5 5.5L16.5 9.2L20.5 10.3L17.8 13.5L20.5 16.2L16.5 16.8L15 20.5L12.6 18.5L12.5 22H11.5L11.4 18.5L9 20.5L7.5 16.8L3.5 16.2L6.2 13.5L3.5 10.3L7.5 9.2L6.5 5.5L10.3 6.1L12 2.5Z"/>
-        </svg>
+        <svg class="icon maple-color"><use href="#icon-maple"/></svg>
         <span>100% Canadian Owned & Hosted · <strong>Canadian Data Sovereignty</strong></span>
       </div>
 
@@ -93,9 +148,7 @@
       <div class="trust-banner-grid">
         <div class="trust-card">
           <div class="trust-icon">
-            <svg class="trust-svg maple-color" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M12 2.5L13.7 6.1L17.5 5.5L16.5 9.2L20.5 10.3L17.8 13.5L20.5 16.2L16.5 16.8L15 20.5L12.6 18.5L12.5 22H11.5L11.4 18.5L9 20.5L7.5 16.8L3.5 16.2L6.2 13.5L3.5 10.3L7.5 9.2L6.5 5.5L10.3 6.1L12 2.5Z"/>
-            </svg>
+            <svg class="icon maple-color"><use href="#icon-maple"/></svg>
           </div>
           <div>
             <h4 class="trust-title">100% Canadian-Exclusive</h4>
@@ -105,10 +158,7 @@
 
         <div class="trust-card">
           <div class="trust-icon">
-            <svg class="trust-svg blue-color" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-              <path d="M9 12l2 2 4-4"/>
-            </svg>
+            <svg class="icon icon-lg blue-color"><use href="#icon-shield"/></svg>
           </div>
           <div>
             <h4 class="trust-title">Data Sovereignty</h4>
@@ -118,12 +168,7 @@
 
         <div class="trust-card">
           <div class="trust-icon">
-            <svg class="trust-svg coral-color" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-              <circle cx="9" cy="7" r="4"></circle>
-              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-            </svg>
+            <svg class="icon icon-lg coral-color"><use href="#icon-users"/></svg>
           </div>
           <div>
             <h4 class="trust-title">Certified Reseller Partner</h4>
@@ -136,9 +181,7 @@
       <div class="hero-scroll-wrapper">
         <a href="#services-overview" class="hero-scroll-btn" onclick="scrollToSection('services-overview', event)" aria-label="Explore Platform Suite">
           <span>Explore Platform Suite</span>
-          <svg class="scroll-chevron-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <polyline points="6 9 12 15 18 9"></polyline>
-          </svg>
+          <svg class="icon icon-sm"><use href="#icon-chevron-down"/></svg>
         </a>
       </div>
     </section>
@@ -334,9 +377,7 @@
     <div class="sovereignty-callout">
       <div class="sovereignty-text">
         <div class="sovereignty-title-row">
-          <svg class="sovereignty-maple-svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M12 2.5L13.7 6.1L17.5 5.5L16.5 9.2L20.5 10.3L17.8 13.5L20.5 16.2L16.5 16.8L15 20.5L12.6 18.5L12.5 22H11.5L11.4 18.5L9 20.5L7.5 16.8L3.5 16.2L6.2 13.5L3.5 10.3L7.5 9.2L6.5 5.5L10.3 6.1L12 2.5Z"/>
-          </svg>
+          <svg class="icon maple-color"><use href="#icon-maple"/></svg>
           <h3>100% Canadian Hosted & Compliant</h3>
         </div>
         <p>Unlike US-based generic platforms, all UnionSolutions products ensure your member records, ballots, and communications remain strictly under Canadian jurisdiction.</p>
@@ -352,7 +393,7 @@
   <main id="page-union365" class="page-view container">
     <header class="detail-page-header">
       <button class="btn-back" onclick="showPage('services')">
-        <svg class="btn-back-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        <svg class="icon icon-sm"><use href="#icon-back"/></svg>
         <span>Back to Ecosystem</span>
       </button>
 
@@ -377,19 +418,19 @@
 
         <div class="hub-pill-grid">
           <div class="hub-pill">
-            <svg class="hub-pill-svg maple-accent" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5L13.7 6.1L17.5 5.5L16.5 9.2L20.5 10.3L17.8 13.5L20.5 16.2L16.5 16.8L15 20.5L12.6 18.5L12.5 22H11.5L11.4 18.5L9 20.5L7.5 16.8L3.5 16.2L6.2 13.5L3.5 10.3L7.5 9.2L6.5 5.5L10.3 6.1L12 2.5Z"/></svg>
+            <svg class="icon maple-color"><use href="#icon-maple"/></svg>
             <span>100% Canadian Built & Hosted</span>
           </div>
           <div class="hub-pill">
-            <svg class="hub-pill-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <svg class="icon icon-sm"><use href="#icon-check"/></svg>
             <span>100% Unique Deployment Tailored to Your Local</span>
           </div>
           <div class="hub-pill">
-            <svg class="hub-pill-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <svg class="icon icon-sm"><use href="#icon-check"/></svg>
             <span>Role-Based Permissions & Workflows</span>
           </div>
           <div class="hub-pill">
-            <svg class="hub-pill-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <svg class="icon icon-sm"><use href="#icon-check"/></svg>
             <span>Eliminates Disconnected Spreadsheets</span>
           </div>
         </div>
@@ -404,10 +445,7 @@
     <!-- Highlight Banner -->
     <div class="hub-highlight-banner">
       <div class="banner-icon-col">
-        <svg class="hub-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-          <path d="M9 12l2 2 4-4"></path>
-        </svg>
+        <svg class="icon icon-lg"><use href="#icon-shield"/></svg>
       </div>
       <div class="banner-content">
         <h4>Built Around Real Union Work</h4>
@@ -470,16 +508,16 @@
         <div class="hub-card">
           <div class="hub-card-header">
             <div class="hub-icon-box">
-              <svg class="hub-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              <svg class="icon icon-lg"><use href="#icon-users"/></svg>
             </div>
             <span class="hub-card-tag">Core CRM</span>
           </div>
           <h3 class="hub-card-title">Member & Membership Management</h3>
           <p class="hub-card-desc">Centralized database for complete member profiles, work histories, classifications, seniority tracking, and custom union fields.</p>
           <ul class="hub-card-list">
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Complete member historical record archives</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Seniority lists and bargaining unit tags</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Custom fields tailored to Local requirements</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Complete member historical record archives</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Seniority lists and bargaining unit tags</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Custom fields tailored to Local requirements</li>
           </ul>
         </div>
 
@@ -487,16 +525,16 @@
         <div class="hub-card">
           <div class="hub-card-header">
             <div class="hub-icon-box coral-accent">
-              <svg class="hub-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              <svg class="icon icon-lg"><use href="#icon-doc"/></svg>
             </div>
             <span class="hub-card-tag">Advocacy</span>
           </div>
           <h3 class="hub-card-title">Grievance & Case Tracking</h3>
           <p class="hub-card-desc">Step-by-step grievance management with strict milestone alerts, contract article linking, steward logs, and arbitration archives.</p>
           <ul class="hub-card-list">
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Automated step deadline alerts (Email & SMS)</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Direct linkage to contract clauses</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Precedence search across past settlements</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Automated step deadline alerts (Email & SMS)</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Direct linkage to contract clauses</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Precedence search across past settlements</li>
           </ul>
         </div>
 
@@ -504,16 +542,16 @@
         <div class="hub-card">
           <div class="hub-card-header">
             <div class="hub-icon-box">
-              <svg class="hub-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+              <svg class="icon icon-lg"><use href="#icon-shield"/></svg>
             </div>
             <span class="hub-card-tag">Agreements</span>
           </div>
           <h3 class="hub-card-title">Collective Agreement Management</h3>
           <p class="hub-card-desc">Full contract clause indexing, keyword search, side-by-side round comparisons, and mobile accessibility for bargaining teams.</p>
           <ul class="hub-card-list">
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Fast full-text clause search</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Historical contract comparison tools</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Mobile-ready clause viewer for stewards</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Fast full-text clause search</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Historical contract comparison tools</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Mobile-ready clause viewer for stewards</li>
           </ul>
         </div>
 
@@ -521,16 +559,16 @@
         <div class="hub-card">
           <div class="hub-card-header">
             <div class="hub-icon-box">
-              <svg class="hub-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+              <svg class="icon icon-lg"><use href="#icon-shield"/></svg>
             </div>
             <span class="hub-card-tag">Finance</span>
           </div>
           <h3 class="hub-card-title">Dues & Payment Tracking</h3>
           <p class="hub-card-desc">Automated employer check-off file ingestion, per-capita calculation, discrepancy identification, and financial reporting.</p>
           <ul class="hub-card-list">
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> CSV/Excel employer file import mapping</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Flags non-members, arrears, and overpayments</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Secretary-Treasurer audit summaries</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> CSV/Excel employer file import mapping</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Flags non-members, arrears, and overpayments</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Secretary-Treasurer audit summaries</li>
           </ul>
         </div>
 
@@ -538,16 +576,16 @@
         <div class="hub-card">
           <div class="hub-card-header">
             <div class="hub-icon-box">
-              <svg class="hub-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              <svg class="icon icon-lg"><use href="#icon-lock"/></svg>
             </div>
             <span class="hub-card-tag">Security</span>
           </div>
           <h3 class="hub-card-title">Secure Document Storage</h3>
           <p class="hub-card-desc">Sovereign Canadian encrypted storage for collective agreements, executive meeting minutes, legal files, and union bylaws.</p>
           <ul class="hub-card-list">
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> AES-256 encrypted Canadian document vault</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Granular role-based access permissions</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Permanent historical document retention</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> AES-256 encrypted Canadian document vault</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Granular role-based access permissions</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Permanent historical document retention</li>
           </ul>
         </div>
 
@@ -555,16 +593,16 @@
         <div class="hub-card">
           <div class="hub-card-header">
             <div class="hub-icon-box">
-              <svg class="hub-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <svg class="icon icon-lg"><use href="#icon-mail"/></svg>
             </div>
             <span class="hub-card-tag">Broadcast</span>
           </div>
           <h3 class="hub-card-title">Communications & Mass Messaging</h3>
           <p class="hub-card-desc">Targeted email broadcast campaigns and SMS text messaging directly to members by bargaining unit, shop, or committee.</p>
           <ul class="hub-card-list">
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Segmented mass email and SMS alerts</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> High delivery rates with CASL compliance</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Delivery confirmation and engagement stats</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Segmented mass email and SMS alerts</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> High delivery rates with CASL compliance</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Delivery confirmation and engagement stats</li>
           </ul>
         </div>
 
@@ -572,16 +610,16 @@
         <div class="hub-card">
           <div class="hub-card-header">
             <div class="hub-icon-box">
-              <svg class="hub-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>
+              <svg class="icon icon-lg"><use href="#icon-shield"/></svg>
             </div>
             <span class="hub-card-tag">Operations</span>
           </div>
           <h3 class="hub-card-title">Digital Forms & Workflows</h3>
           <p class="hub-card-desc">Eliminate paper intake with online member forms, leave requests, address changes, steward intakes, and automated approvals.</p>
           <ul class="hub-card-list">
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Custom digital forms for member requests</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Automated routing to assigned officers</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Digital signature capture for documentation</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Custom digital forms for member requests</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Automated routing to assigned officers</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Digital signature capture for documentation</li>
           </ul>
         </div>
 
@@ -589,16 +627,16 @@
         <div class="hub-card">
           <div class="hub-card-header">
             <div class="hub-icon-box">
-              <svg class="hub-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              <svg class="icon icon-lg"><use href="#icon-calendar"/></svg>
             </div>
             <span class="hub-card-tag">Coordination</span>
           </div>
           <h3 class="hub-card-title">Events & Shared Calendars</h3>
           <p class="hub-card-desc">Centralized scheduling for general membership meetings, executive boards, grievance hearings, and steward education sessions.</p>
           <ul class="hub-card-list">
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Shared union-wide and unit calendars</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Automated meeting invites and reminders</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Hearing and bargaining schedule tracking</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Shared union-wide and unit calendars</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Automated meeting invites and reminders</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Hearing and bargaining schedule tracking</li>
           </ul>
         </div>
 
@@ -606,16 +644,16 @@
         <div class="hub-card">
           <div class="hub-card-header">
             <div class="hub-icon-box coral-accent">
-              <svg class="hub-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg>
+              <svg class="icon icon-lg"><use href="#icon-shield"/></svg>
             </div>
             <span class="hub-card-tag">Mobilization</span>
           </div>
           <h3 class="hub-card-title">Strike & Mobilization Management</h3>
           <p class="hub-card-desc">Digital coordination for job actions, picket line shifts, strike pay administration, check-ins, and emergency member notifications.</p>
           <ul class="hub-card-list">
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Picket line scheduling and digital check-ins</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Strike pay tracking and audit logs</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Urgent mobilization broadcast dispatches</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Picket line scheduling and digital check-ins</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Strike pay tracking and audit logs</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Urgent mobilization broadcast dispatches</li>
           </ul>
         </div>
 
@@ -623,16 +661,16 @@
         <div class="hub-card">
           <div class="hub-card-header">
             <div class="hub-icon-box">
-              <svg class="hub-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+              <svg class="icon icon-lg"><use href="#icon-shield"/></svg>
             </div>
             <span class="hub-card-tag">Dispatch</span>
           </div>
           <h3 class="hub-card-title">Hiring Hall & Dispatching Tools</h3>
           <p class="hub-card-desc">Fair, transparent dispatch management with out-of-work lists, skill certifications, employer call-outs, and dispatch history.</p>
           <ul class="hub-card-list">
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Automated out-of-work list ordering</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Certification and safety ticket tracking</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Automated job call dispatch notifications</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Automated out-of-work list ordering</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Certification and safety ticket tracking</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Automated job call dispatch notifications</li>
           </ul>
         </div>
 
@@ -640,16 +678,16 @@
         <div class="hub-card">
           <div class="hub-card-header">
             <div class="hub-icon-box">
-              <svg class="hub-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              <svg class="icon icon-lg"><use href="#icon-shield"/></svg>
             </div>
             <span class="hub-card-tag">Portal & Web</span>
           </div>
           <h3 class="hub-card-title">Member Portals & Public Websites</h3>
           <p class="hub-card-desc">Secure self-service portal for members to view agreements, update contact details, and access benefits, plus modern public union websites.</p>
           <ul class="hub-card-list">
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Self-service member profile management</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Digital union membership cards</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Public union website integration options</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Self-service member profile management</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Digital union membership cards</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Public union website integration options</li>
           </ul>
         </div>
 
@@ -657,16 +695,16 @@
         <div class="hub-card">
           <div class="hub-card-header">
             <div class="hub-icon-box">
-              <svg class="hub-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+              <svg class="icon icon-lg"><use href="#icon-chart"/></svg>
             </div>
             <span class="hub-card-tag">Insights</span>
           </div>
           <h3 class="hub-card-title">Reporting & Analytics</h3>
           <p class="hub-card-desc">Real-time executive reporting on membership demographics, grievance turnaround times, per-capita collections, and unit trends.</p>
           <ul class="hub-card-list">
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Live executive performance dashboards</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Grievance resolution velocity tracking</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Export-ready financial and audit reports</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Live executive performance dashboards</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Grievance resolution velocity tracking</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Export-ready financial and audit reports</li>
           </ul>
         </div>
 
@@ -674,16 +712,16 @@
         <div class="hub-card">
           <div class="hub-card-header">
             <div class="hub-icon-box coral-accent">
-              <svg class="hub-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+              <svg class="icon icon-lg"><use href="#icon-shield"/></svg>
             </div>
             <span class="hub-card-tag">Customization</span>
           </div>
           <h3 class="hub-card-title">Customization to Fit Your Local's Processes</h3>
           <p class="hub-card-desc">Every deployment of Union365 is 100% unique and configured around your Local's specific constitution, bylaws, terminology, and workflows.</p>
           <ul class="hub-card-list">
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Configured around your union's existing structure</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Custom fields, tags, and approval hierarchies</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Tailored steward onboarding and training programs</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Configured around your union's existing structure</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Custom fields, tags, and approval hierarchies</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Tailored steward onboarding and training programs</li>
           </ul>
         </div>
 
@@ -694,9 +732,7 @@
     <div class="sovereignty-callout">
       <div class="sovereignty-text">
         <div class="sovereignty-title-row">
-          <svg class="sovereignty-maple-svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M12 2.5L13.7 6.1L17.5 5.5L16.5 9.2L20.5 10.3L17.8 13.5L20.5 16.2L16.5 16.8L15 20.5L12.6 18.5L12.5 22H11.5L11.4 18.5L9 20.5L7.5 16.8L3.5 16.2L6.2 13.5L3.5 10.3L7.5 9.2L6.5 5.5L10.3 6.1L12 2.5Z"/>
-          </svg>
+          <svg class="icon maple-color"><use href="#icon-maple"/></svg>
           <h3>100% Canadian Data Sovereignty</h3>
         </div>
         <p>Your Local's member rosters, grievance records, and bargaining strategies are hosted strictly within Canadian borders in full compliance with Canadian privacy legislation (PIPEDA). Zero foreign parent entities, zero US CLOUD Act exposure.</p>
@@ -720,7 +756,7 @@
   <main id="page-infavour" class="page-view container">
     <header class="detail-page-header">
       <button class="btn-back" onclick="showPage('services')">
-        <svg class="btn-back-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        <svg class="icon icon-sm"><use href="#icon-back"/></svg>
         <span>Back to Ecosystem</span>
       </button>
 
@@ -745,19 +781,19 @@
 
         <div class="hub-pill-grid">
           <div class="hub-pill">
-            <svg class="hub-pill-svg maple-accent" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5L13.7 6.1L17.5 5.5L16.5 9.2L20.5 10.3L17.8 13.5L20.5 16.2L16.5 16.8L15 20.5L12.6 18.5L12.5 22H11.5L11.4 18.5L9 20.5L7.5 16.8L3.5 16.2L6.2 13.5L3.5 10.3L7.5 9.2L6.5 5.5L10.3 6.1L12 2.5Z"/></svg>
+            <svg class="icon maple-color"><use href="#icon-maple"/></svg>
             <span>Canadian Hosted Infrastructure</span>
           </div>
           <div class="hub-pill">
-            <svg class="hub-pill-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <svg class="icon icon-sm"><use href="#icon-check"/></svg>
             <span>Zero App Downloads Required</span>
           </div>
           <div class="hub-pill">
-            <svg class="hub-pill-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <svg class="icon icon-sm"><use href="#icon-check"/></svg>
             <span>No Passwords to Remember</span>
           </div>
           <div class="hub-pill">
-            <svg class="hub-pill-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <svg class="icon icon-sm"><use href="#icon-check"/></svg>
             <span>Audit-Ready Results Certificates</span>
           </div>
         </div>
@@ -772,10 +808,7 @@
     <!-- Highlight Banner -->
     <div class="hub-highlight-banner banner-blue">
       <div class="banner-icon-col">
-        <svg class="hub-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-          <path d="M9 12l2 2 4-4"></path>
-        </svg>
+        <svg class="icon icon-lg"><use href="#icon-shield"/></svg>
       </div>
       <div class="banner-content">
         <h4>Friction-Free Member Participation</h4>
@@ -832,16 +865,16 @@
         <div class="hub-card">
           <div class="hub-card-header">
             <div class="hub-icon-box">
-              <svg class="hub-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+              <svg class="icon icon-lg"><use href="#icon-shield"/></svg>
             </div>
             <span class="hub-card-tag">Elections</span>
           </div>
           <h3 class="hub-card-title">Online Union Elections</h3>
           <p class="hub-card-desc">Run executive elections, shop steward votes, and convention delegate selections with preferential, multi-seat, or weighted ballots.</p>
           <ul class="hub-card-list">
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Multi-seat and candidate bio support</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Configurable nomination and voting periods</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Elimination of spoiled paper ballots</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Multi-seat and candidate bio support</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Configurable nomination and voting periods</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Elimination of spoiled paper ballots</li>
           </ul>
         </div>
 
@@ -849,16 +882,16 @@
         <div class="hub-card">
           <div class="hub-card-header">
             <div class="hub-icon-box coral-accent">
-              <svg class="hub-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+              <svg class="icon icon-lg"><use href="#icon-shield"/></svg>
             </div>
             <span class="hub-card-tag">Ratification</span>
           </div>
           <h3 class="hub-card-title">Ratification Votes & Referendums</h3>
           <p class="hub-card-desc">Conduct high-stakes contract ratification votes, strike authorizations, dues changes, and constitutional referendum votes securely.</p>
           <ul class="hub-card-list">
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Collective agreement ratification polling</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Strike authorization vote management</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Bylaw amendment referendums</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Collective agreement ratification polling</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Strike authorization vote management</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Bylaw amendment referendums</li>
           </ul>
         </div>
 
@@ -866,16 +899,16 @@
         <div class="hub-card">
           <div class="hub-card-header">
             <div class="hub-icon-box">
-              <svg class="hub-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              <svg class="icon icon-lg"><use href="#icon-lock"/></svg>
             </div>
             <span class="hub-card-tag">Security</span>
           </div>
           <h3 class="hub-card-title">Secure Member Authentication</h3>
           <p class="hub-card-desc">Robust authentication verifying member eligibility by local, employer, or unit before granting secure single-use voting access.</p>
           <ul class="hub-card-list">
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Single-use token authentication</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Verification by member ID or unit criteria</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Prevents duplicate voting attempts</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Single-use token authentication</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Verification by member ID or unit criteria</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Prevents duplicate voting attempts</li>
           </ul>
         </div>
 
@@ -883,16 +916,16 @@
         <div class="hub-card">
           <div class="hub-card-header">
             <div class="hub-icon-box">
-              <svg class="hub-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <svg class="icon icon-lg"><use href="#icon-mail"/></svg>
             </div>
             <span class="hub-card-tag">Dispatch</span>
           </div>
           <h3 class="hub-card-title">Email & SMS Voting Invitations</h3>
           <p class="hub-card-desc">Distribute voting invitations through both email and SMS, maximizing turnout across decentralized worksites and shift workers.</p>
           <ul class="hub-card-list">
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Multi-channel delivery to email & mobile</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Automated turnout reminder dispatches</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Bounces and delivery status tracking</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Multi-channel delivery to email & mobile</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Automated turnout reminder dispatches</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Bounces and delivery status tracking</li>
           </ul>
         </div>
 
@@ -900,16 +933,16 @@
         <div class="hub-card">
           <div class="hub-card-header">
             <div class="hub-icon-box">
-              <svg class="hub-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              <svg class="icon icon-lg"><use href="#icon-shield"/></svg>
             </div>
             <span class="hub-card-tag">Integrity</span>
           </div>
           <h3 class="hub-card-title">Anonymous & Encrypted Voting</h3>
           <p class="hub-card-desc">Complete cryptographic separation between voter identity and cast ballots guarantees total secret-ballot privacy and integrity.</p>
           <ul class="hub-card-list">
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Cryptographic secret-ballot anonymization</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Zero identity tracking on submitted votes</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> End-to-end ballot encryption</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Cryptographic secret-ballot anonymization</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Zero identity tracking on submitted votes</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> End-to-end ballot encryption</li>
           </ul>
         </div>
 
@@ -917,16 +950,16 @@
         <div class="hub-card">
           <div class="hub-card-header">
             <div class="hub-icon-box">
-              <svg class="hub-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+              <svg class="icon icon-lg"><use href="#icon-shield"/></svg>
             </div>
             <span class="hub-card-tag">Analytics</span>
           </div>
           <h3 class="hub-card-title">Real-Time Vote Tracking</h3>
           <p class="hub-card-desc">Election administrators can monitor live turnout percentages and participation rates in real time without exposing preliminary results.</p>
           <ul class="hub-card-list">
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Live voter turnout percentage monitoring</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Unit-by-unit participation breakdowns</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Zero compromise of partial ballot tallies</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Live voter turnout percentage monitoring</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Unit-by-unit participation breakdowns</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Zero compromise of partial ballot tallies</li>
           </ul>
         </div>
 
@@ -934,16 +967,16 @@
         <div class="hub-card">
           <div class="hub-card-header">
             <div class="hub-icon-box coral-accent">
-              <svg class="hub-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              <svg class="icon icon-lg"><use href="#icon-shield"/></svg>
             </div>
             <span class="hub-card-tag">Turnaround</span>
           </div>
           <h3 class="hub-card-title">Instant Certified Results</h3>
           <p class="hub-card-desc">Upon poll close, results are computed instantaneously with cryptographic verification, eliminating hours of manual ballot counting.</p>
           <ul class="hub-card-list">
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Instantaneous mathematical vote tallying</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Certified outcome summaries for executives</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Immediate member announcement readiness</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Instantaneous mathematical vote tallying</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Certified outcome summaries for executives</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Immediate member announcement readiness</li>
           </ul>
         </div>
 
@@ -951,16 +984,16 @@
         <div class="hub-card">
           <div class="hub-card-header">
             <div class="hub-icon-box">
-              <svg class="hub-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              <svg class="icon icon-lg"><use href="#icon-doc"/></svg>
             </div>
             <span class="hub-card-tag">Compliance</span>
           </div>
           <h3 class="hub-card-title">Detailed Audit Reports</h3>
           <p class="hub-card-desc">Produces comprehensive, audit-ready reporting packages that satisfy union constitution bylaws, election committees, and labour boards.</p>
           <ul class="hub-card-list">
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Complete voter participation logs</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Timestamped election lifecycle audit logs</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Dispute-proof verification certificates</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Complete voter participation logs</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Timestamped election lifecycle audit logs</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Dispute-proof verification certificates</li>
           </ul>
         </div>
 
@@ -968,16 +1001,16 @@
         <div class="hub-card">
           <div class="hub-card-header">
             <div class="hub-icon-box coral-accent">
-              <svg class="hub-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+              <svg class="icon icon-lg"><use href="#icon-server"/></svg>
             </div>
             <span class="hub-card-tag">Sovereignty</span>
           </div>
           <h3 class="hub-card-title">Canadian Data Hosting & Sovereignty</h3>
           <p class="hub-card-desc">100% Canadian-hosted voting infrastructure ensures all member participation data and cast ballots remain within Canadian jurisdiction.</p>
           <ul class="hub-card-list">
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Sovereign Canadian server infrastructure</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Complete PIPEDA privacy law compliance</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Zero foreign government data exposure</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Sovereign Canadian server infrastructure</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Complete PIPEDA privacy law compliance</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Zero foreign government data exposure</li>
           </ul>
         </div>
 
@@ -985,16 +1018,16 @@
         <div class="hub-card">
           <div class="hub-card-header">
             <div class="hub-icon-box">
-              <svg class="hub-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+              <svg class="icon icon-lg"><use href="#icon-shield"/></svg>
             </div>
             <span class="hub-card-tag">Turnkey</span>
           </div>
           <h3 class="hub-card-title">Union365 Integration & Managed Services</h3>
           <p class="hub-card-desc">Direct synchronization with Union365 active rosters, plus optional turnkey voting administration by certified election specialists.</p>
           <ul class="hub-card-list">
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Automatic sync with Union365 member rosters</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Optional fully managed election administration</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Transparent, predictable per-vote pricing</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Automatic sync with Union365 member rosters</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Optional fully managed election administration</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Transparent, predictable per-vote pricing</li>
           </ul>
         </div>
 
@@ -1005,9 +1038,7 @@
     <div class="sovereignty-callout">
       <div class="sovereignty-text">
         <div class="sovereignty-title-row">
-          <svg class="sovereignty-maple-svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M12 2.5L13.7 6.1L17.5 5.5L16.5 9.2L20.5 10.3L17.8 13.5L20.5 16.2L16.5 16.8L15 20.5L12.6 18.5L12.5 22H11.5L11.4 18.5L9 20.5L7.5 16.8L3.5 16.2L6.2 13.5L3.5 10.3L7.5 9.2L6.5 5.5L10.3 6.1L12 2.5Z"/>
-          </svg>
+          <svg class="icon maple-color"><use href="#icon-maple"/></svg>
           <h3>Canadian Data Hosting & Democratic Security</h3>
         </div>
         <p>With Canadian-hosted infrastructure and built-in audit capabilities, InFavour gives unions a straightforward way to move important democratic processes online while maintaining security, transparency, and member confidence.</p>
@@ -1031,7 +1062,7 @@
   <main id="page-membermate" class="page-view container">
     <header class="detail-page-header">
       <button class="btn-back" onclick="showPage('services')">
-        <svg class="btn-back-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        <svg class="icon icon-sm"><use href="#icon-back"/></svg>
         <span>Back to Ecosystem</span>
       </button>
 
@@ -1056,19 +1087,19 @@
 
         <div class="hub-pill-grid">
           <div class="hub-pill">
-            <svg class="hub-pill-svg maple-accent" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5L13.7 6.1L17.5 5.5L16.5 9.2L20.5 10.3L17.8 13.5L20.5 16.2L16.5 16.8L15 20.5L12.6 18.5L12.5 22H11.5L11.4 18.5L9 20.5L7.5 16.8L3.5 16.2L6.2 13.5L3.5 10.3L7.5 9.2L6.5 5.5L10.3 6.1L12 2.5Z"/></svg>
+            <svg class="icon maple-color"><use href="#icon-maple"/></svg>
             <span>100% Canadian Data Residency</span>
           </div>
           <div class="hub-pill">
-            <svg class="hub-pill-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <svg class="icon icon-sm"><use href="#icon-check"/></svg>
             <span>Complements Union Stewards & Reps</span>
           </div>
           <div class="hub-pill">
-            <svg class="hub-pill-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <svg class="icon icon-sm"><use href="#icon-check"/></svg>
             <span>24/7 Access for Shift Workers</span>
           </div>
           <div class="hub-pill">
-            <svg class="hub-pill-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <svg class="icon icon-sm"><use href="#icon-check"/></svg>
             <span>Zero Public AI Model Training</span>
           </div>
         </div>
@@ -1083,12 +1114,7 @@
     <!-- Core Philosophy Highlight Banner -->
     <div class="hub-highlight-banner banner-blue">
       <div class="banner-icon-col">
-        <svg class="hub-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-          <circle cx="9" cy="7" r="4"></circle>
-          <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-          <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-        </svg>
+        <svg class="icon icon-lg"><use href="#icon-users"/></svg>
       </div>
       <div class="banner-content">
         <h4>Designed to Complement — Not Replace — Union Representatives</h4>
@@ -1157,16 +1183,16 @@
         <div class="hub-card">
           <div class="hub-card-header">
             <div class="hub-icon-box">
-              <svg class="hub-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+              <svg class="icon icon-lg"><use href="#icon-shield"/></svg>
             </div>
             <span class="hub-card-tag">Rights & Contracts</span>
           </div>
           <h3 class="hub-card-title">Help Members Better Understand Collective Agreements & Rights</h3>
           <p class="hub-card-desc">Translates dense contractual clauses into clear, actionable explanations so members understand their seniority, leave entitlements, overtime rules, and workplace rights.</p>
           <ul class="hub-card-list">
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Exact article and clause citations</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Clear answers on leaves, seniority, and benefits</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Accessible on desktop, tablet, and mobile</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Exact article and clause citations</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Clear answers on leaves, seniority, and benefits</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Accessible on desktop, tablet, and mobile</li>
           </ul>
         </div>
 
@@ -1174,16 +1200,16 @@
         <div class="hub-card">
           <div class="hub-card-header">
             <div class="hub-icon-box coral-accent">
-              <svg class="hub-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+              <svg class="icon icon-lg"><use href="#icon-shield"/></svg>
             </div>
             <span class="hub-card-tag">Workload Relief</span>
           </div>
           <h3 class="hub-card-title">Reduce Repetitive Questions to Union Reps</h3>
           <p class="hub-card-desc">Automates answers to common, routine procedural and contract inquiries, eliminating phone tag and administrative bottlenecks for full-time officers and stewards.</p>
           <ul class="hub-card-list">
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Frees stewards to focus on active grievances and bargaining</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Eliminates repetitive email and phone back-and-forth</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Consistent, vetted answers every single time</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Frees stewards to focus on active grievances and bargaining</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Eliminates repetitive email and phone back-and-forth</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Consistent, vetted answers every single time</li>
           </ul>
         </div>
 
@@ -1191,16 +1217,16 @@
         <div class="hub-card">
           <div class="hub-card-header">
             <div class="hub-icon-box">
-              <svg class="hub-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="2" x2="12" y2="6"></line><line x1="12" y1="18" x2="12" y2="22"></line><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"></line><line x1="2" y1="12" x2="6" y2="12"></line><line x1="18" y1="12" x2="22" y2="12"></line><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line></svg>
+              <svg class="icon icon-lg"><use href="#icon-chart"/></svg>
             </div>
             <span class="hub-card-tag">24/7 Availability</span>
           </div>
           <h3 class="hub-card-title">Provide 24/7 Answers to Common Questions</h3>
           <p class="hub-card-desc">Shift workers, healthcare staff, transit operators, and tradespeople work all hours. MemberMate provides immediate answers at midnight, on weekends, or during holidays.</p>
           <ul class="hub-card-list">
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Instant support outside standard 9-to-5 hall hours</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Zero wait times for basic contract lookups</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Empowers members with immediate clarity</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Instant support outside standard 9-to-5 hall hours</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Zero wait times for basic contract lookups</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Empowers members with immediate clarity</li>
           </ul>
         </div>
 
@@ -1208,16 +1234,16 @@
         <div class="hub-card">
           <div class="hub-card-header">
             <div class="hub-icon-box">
-              <svg class="hub-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+              <svg class="icon icon-lg"><use href="#icon-doc"/></svg>
             </div>
             <span class="hub-card-tag">Advocacy Support</span>
           </div>
           <h3 class="hub-card-title">Assist with Grievance Submissions & Tracking</h3>
           <p class="hub-card-desc">Helps members navigate official union grievance procedures, identify relevant contract violations, and prepare the necessary details before speaking with their steward.</p>
           <ul class="hub-card-list">
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Clarifies procedural grievance filing steps and timelines</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Directs members to official intake forms and steward contacts</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Prepares organized case details for steward review</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Clarifies procedural grievance filing steps and timelines</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Directs members to official intake forms and steward contacts</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Prepares organized case details for steward review</li>
           </ul>
         </div>
 
@@ -1225,16 +1251,16 @@
         <div class="hub-card">
           <div class="hub-card-header">
             <div class="hub-icon-box">
-              <svg class="hub-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              <svg class="icon icon-lg"><use href="#icon-calendar"/></svg>
             </div>
             <span class="hub-card-tag">Events & Updates</span>
           </div>
           <h3 class="hub-card-title">Keep Members Informed About Events & Meetings</h3>
           <p class="hub-card-desc">Answers inquiries regarding upcoming general membership meetings, bargaining update webinars, ratification voting dates, and committee rallies.</p>
           <ul class="hub-card-list">
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Meeting dates, locations, and virtual links</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Voting window details and nomination schedules</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Directs members to official registration forms</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Meeting dates, locations, and virtual links</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Voting window details and nomination schedules</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Directs members to official registration forms</li>
           </ul>
         </div>
 
@@ -1242,16 +1268,16 @@
         <div class="hub-card">
           <div class="hub-card-header">
             <div class="hub-icon-box">
-              <svg class="hub-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              <svg class="icon icon-lg"><use href="#icon-lock"/></svg>
             </div>
             <span class="hub-card-tag">Data Sovereignty</span>
           </div>
           <h3 class="hub-card-title">Private Canadian Document Privacy & Security</h3>
           <p class="hub-card-desc">MemberMate is strictly trained on documents provided by your union. Your confidential bargaining records and bylaws are never shared or used to train public commercial AI models.</p>
           <ul class="hub-card-list">
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> 100% Canadian data residency guarantee</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Zero leakage to external commercial AI systems</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> PIPEDA compliant encryption at rest and in transit</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> 100% Canadian data residency guarantee</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Zero leakage to external commercial AI systems</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> PIPEDA compliant encryption at rest and in transit</li>
           </ul>
         </div>
 
@@ -1262,9 +1288,7 @@
     <div class="sovereignty-callout">
       <div class="sovereignty-text">
         <div class="sovereignty-title-row">
-          <svg class="sovereignty-maple-svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M12 2.5L13.7 6.1L17.5 5.5L16.5 9.2L20.5 10.3L17.8 13.5L20.5 16.2L16.5 16.8L15 20.5L12.6 18.5L12.5 22H11.5L11.4 18.5L9 20.5L7.5 16.8L3.5 16.2L6.2 13.5L3.5 10.3L7.5 9.2L6.5 5.5L10.3 6.1L12 2.5Z"/>
-          </svg>
+          <svg class="icon maple-color"><use href="#icon-maple"/></svg>
           <h3>Canadian Labour AI Sovereignty</h3>
         </div>
         <p>Your agreements and bylaws remain your intellectual property. MemberMate indexes your documents within a private, Canadian-sovereign vault, ensuring full PIPEDA compliance and total member privacy.</p>
@@ -1288,7 +1312,7 @@
   <main id="page-unioninbox" class="page-view container">
     <header class="detail-page-header">
       <button class="btn-back" onclick="showPage('services')">
-        <svg class="btn-back-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        <svg class="icon icon-sm"><use href="#icon-back"/></svg>
         <span>Back to Ecosystem</span>
       </button>
 
@@ -1313,19 +1337,19 @@
 
         <div class="hub-pill-grid">
           <div class="hub-pill">
-            <svg class="hub-pill-svg maple-accent" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5L13.7 6.1L17.5 5.5L16.5 9.2L20.5 10.3L17.8 13.5L20.5 16.2L16.5 16.8L15 20.5L12.6 18.5L12.5 22H11.5L11.4 18.5L9 20.5L7.5 16.8L3.5 16.2L6.2 13.5L3.5 10.3L7.5 9.2L6.5 5.5L10.3 6.1L12 2.5Z"/></svg>
+            <svg class="icon maple-color"><use href="#icon-maple"/></svg>
             <span>Canadian Server Infrastructure</span>
           </div>
           <div class="hub-pill">
-            <svg class="hub-pill-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <svg class="icon icon-sm"><use href="#icon-check"/></svg>
             <span>Bypasses Commercial Spam Filters</span>
           </div>
           <div class="hub-pill">
-            <svg class="hub-pill-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <svg class="icon icon-sm"><use href="#icon-check"/></svg>
             <span>Permanent Legacy Mailboxes</span>
           </div>
           <div class="hub-pill">
-            <svg class="hub-pill-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <svg class="icon icon-sm"><use href="#icon-check"/></svg>
             <span>Full CASL Compliance</span>
           </div>
         </div>
@@ -1340,10 +1364,7 @@
     <!-- Legacy Mailbox Highlight Banner -->
     <div class="hub-highlight-banner banner-blue">
       <div class="banner-icon-col">
-        <svg class="hub-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-          <polyline points="22,6 12,13 2,6"></polyline>
-        </svg>
+        <svg class="icon icon-lg"><use href="#icon-mail"/></svg>
       </div>
       <div class="banner-content">
         <h4>Preserve Institutional Memory Across Leadership Transitions</h4>
@@ -1365,16 +1386,16 @@
         <div class="hub-card">
           <div class="hub-card-header">
             <div class="hub-icon-box">
-              <svg class="hub-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              <svg class="icon icon-lg"><use href="#icon-shield"/></svg>
             </div>
             <span class="hub-card-tag">Deliverability</span>
           </div>
           <h3 class="hub-card-title">Guaranteed Message Delivery</h3>
           <p class="hub-card-desc">Bypasses aggressive commercial spam filters with dedicated Canadian IP reputation optimization tailored to labour communication.</p>
           <ul class="hub-card-list">
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Canadian server reputation optimization</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> High priority for strike & bargaining alerts</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Real-time delivery receipt monitoring</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Canadian server reputation optimization</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> High priority for strike & bargaining alerts</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Real-time delivery receipt monitoring</li>
           </ul>
         </div>
 
@@ -1382,16 +1403,16 @@
         <div class="hub-card">
           <div class="hub-card-header">
             <div class="hub-icon-box coral-accent">
-              <svg class="hub-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              <svg class="icon icon-lg"><use href="#icon-users"/></svg>
             </div>
             <span class="hub-card-tag">Collaboration</span>
           </div>
           <h3 class="hub-card-title">Collaborative Team Inboxes</h3>
           <p class="hub-card-desc">Shared email addresses (grievances@, bargaining@, benefits@) allow executive and steward teams to view threads, assign cases, and add internal notes.</p>
           <ul class="hub-card-list">
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Shared team departmental inboxes</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Assign member threads to specific stewards</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Private internal notes on member emails</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Shared team departmental inboxes</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Assign member threads to specific stewards</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Private internal notes on member emails</li>
           </ul>
         </div>
 
@@ -1399,16 +1420,16 @@
         <div class="hub-card">
           <div class="hub-card-header">
             <div class="hub-icon-box">
-              <svg class="hub-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8v13H3V8"></path><path d="M1 3h22v5H1z"></path><path d="M10 12h4"></path></svg>
+              <svg class="icon icon-lg"><use href="#icon-shield"/></svg>
             </div>
             <span class="hub-card-tag">Legacy</span>
           </div>
           <h3 class="hub-card-title">Permanent Legacy Mailboxes</h3>
           <p class="hub-card-desc">Role-based executive email accounts that transfer cleanly to future elected officers, ensuring critical history and attachments are never lost.</p>
           <ul class="hub-card-list">
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Smooth leadership transition handovers</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Preserves complete bargaining correspondence</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Instant onboarding for incoming officers</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Smooth leadership transition handovers</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Preserves complete bargaining correspondence</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Instant onboarding for incoming officers</li>
           </ul>
         </div>
 
@@ -1416,16 +1437,16 @@
         <div class="hub-card">
           <div class="hub-card-header">
             <div class="hub-icon-box">
-              <svg class="hub-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"></circle><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"></path></svg>
+              <svg class="icon icon-lg"><use href="#icon-shield"/></svg>
             </div>
             <span class="hub-card-tag">Broadcasting</span>
           </div>
           <h3 class="hub-card-title">Targeted Member Broadcasts</h3>
           <p class="hub-card-desc">Segment broadcasts precisely by workplace, bargaining unit, geographic local, or committee with email and SMS text channels.</p>
           <ul class="hub-card-list">
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Unit and shop level segmentation</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Multi-channel email and SMS broadcasts</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Automated bounce cleaning</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Unit and shop level segmentation</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Multi-channel email and SMS broadcasts</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Automated bounce cleaning</li>
           </ul>
         </div>
 
@@ -1433,16 +1454,16 @@
         <div class="hub-card">
           <div class="hub-card-header">
             <div class="hub-icon-box">
-              <svg class="hub-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              <svg class="icon icon-lg"><use href="#icon-shield"/></svg>
             </div>
             <span class="hub-card-tag">CASL</span>
           </div>
           <h3 class="hub-card-title">Full CASL Compliance</h3>
           <p class="hub-card-desc">Engineered specifically to satisfy Canadian Anti-Spam Legislation with automated unsubscribe processing and compliance audit trails.</p>
           <ul class="hub-card-list">
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> CASL compliant unsubscribe management</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Audit-proof consent logging</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> End-to-end TLS encryption</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> CASL compliant unsubscribe management</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Audit-proof consent logging</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> End-to-end TLS encryption</li>
           </ul>
         </div>
 
@@ -1450,16 +1471,16 @@
         <div class="hub-card">
           <div class="hub-card-header">
             <div class="hub-icon-box">
-              <svg class="hub-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
+              <svg class="icon icon-lg"><use href="#icon-shield"/></svg>
             </div>
             <span class="hub-card-tag">Sync</span>
           </div>
           <h3 class="hub-card-title">Union365 Member Synchronization</h3>
           <p class="hub-card-desc">Connects directly with your Union365 database to ensure contact emails, phone numbers, and membership statuses are synchronized in real time.</p>
           <ul class="hub-card-list">
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Real-time member roster synchronization</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Auto-updates on address & phone changes</li>
-            <li><svg class="hub-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Single unified contact management</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Real-time member roster synchronization</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Auto-updates on address & phone changes</li>
+            <li><svg class="icon icon-sm check-color"><use href="#icon-check"/></svg> Single unified contact management</li>
           </ul>
         </div>
 
@@ -1470,9 +1491,7 @@
     <div class="sovereignty-callout">
       <div class="sovereignty-text">
         <div class="sovereignty-title-row">
-          <svg class="sovereignty-maple-svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M12 2.5L13.7 6.1L17.5 5.5L16.5 9.2L20.5 10.3L17.8 13.5L20.5 16.2L16.5 16.8L15 20.5L12.6 18.5L12.5 22H11.5L11.4 18.5L9 20.5L7.5 16.8L3.5 16.2L6.2 13.5L3.5 10.3L7.5 9.2L6.5 5.5L10.3 6.1L12 2.5Z"/>
-          </svg>
+          <svg class="icon maple-color"><use href="#icon-maple"/></svg>
           <h3>100% Canadian Hosted Email Infrastructure</h3>
         </div>
         <p>Your union's private member correspondence and executive strategies are hosted strictly on Canadian servers under Canadian privacy laws. Protect your union from foreign data surveillance and commercial spam blocks.</p>
@@ -1550,33 +1569,7 @@
         <div class="card info-box certified-badge-card">
           <div class="certified-badge-header">
             <div class="reseller-seal">
-              <svg class="reseller-seal-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <!-- Outer glow circle -->
-                <circle cx="50" cy="50" r="46" stroke="url(#sealBorderGradient)" stroke-width="2.5" stroke-dasharray="3 3" />
-                <!-- Inner solid border -->
-                <circle cx="50" cy="50" r="41" stroke="#38BDF8" stroke-width="1.5" />
-                <!-- Inner slate background -->
-                <circle cx="50" cy="50" r="39" fill="#151D2A" />
-                
-                <!-- Maple leaf center -->
-                <path d="M50 20L53.4 27.2L61 26L59 33.4L67 35.6L61.6 42L67 47.4L59 48.6L56 56L51.2 52L51 59H49L48.8 52L44 56L41 48.6L33 47.4L38.4 42L33 35.6L41 33.4L39 26L46.6 27.2L50 20Z" fill="#FF4D4D" />
-                
-                <!-- Partnership handshake grip geometric overlay in blue/navy -->
-                <rect x="42" y="44" width="7" height="7" rx="1.5" fill="#38BDF8" />
-                <rect x="51" y="44" width="7" height="7" rx="1.5" fill="#1B2A4A" stroke="#38BDF8" stroke-width="1" />
-                
-                <!-- Verified Checkmark Badge at bottom -->
-                <circle cx="50" cy="74" r="10" fill="#38BDF8" />
-                <path d="M46 74L49 77L55 71" stroke="#0B0F17" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-                
-                <defs>
-                  <linearGradient id="sealBorderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stop-color="#FF4D4D" />
-                    <stop offset="50%" stop-color="#38BDF8" />
-                    <stop offset="100%" stop-color="#FF4D4D" />
-                  </linearGradient>
-                </defs>
-              </svg>
+              <svg class="reseller-seal-svg"><use href="#icon-reseller"/></svg>
             </div>
             <div class="certified-badge-titles">
               <span class="certified-tag">Authorized Partner</span>
@@ -1587,21 +1580,15 @@
           
           <div class="certified-specs">
             <div class="spec-item">
-              <svg class="spec-check" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-              </svg>
+              <svg class="icon icon-sm check-color"><use href="#icon-check-solid"/></svg>
               <span><strong>Authorized Suite:</strong> Official provider for Union365, Infavour, MemberMate & Union Inbox</span>
             </div>
             <div class="spec-item">
-              <svg class="spec-check" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-              </svg>
+              <svg class="icon icon-sm check-color"><use href="#icon-check-solid"/></svg>
               <span><strong>Data Sovereignty:</strong> 100% Canadian data residency & PIPEDA compliance guarantee</span>
             </div>
             <div class="spec-item">
-              <svg class="spec-check" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-              </svg>
+              <svg class="icon icon-sm check-color"><use href="#icon-check-solid"/></svg>
               <span><strong>Turnkey Onboarding:</strong> Full data migration assistance and dedicated steward & executive training</span>
             </div>
           </div>
@@ -1676,9 +1663,7 @@
       </div>
 
       <div class="footer-badge">
-        <svg class="footer-maple-svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <path d="M12 2.5L13.7 6.1L17.5 5.5L16.5 9.2L20.5 10.3L17.8 13.5L20.5 16.2L16.5 16.8L15 20.5L12.6 18.5L12.5 22H11.5L11.4 18.5L9 20.5L7.5 16.8L3.5 16.2L6.2 13.5L3.5 10.3L7.5 9.2L6.5 5.5L10.3 6.1L12 2.5Z"/>
-        </svg>
+        <svg class="icon maple-color"><use href="#icon-maple"/></svg>
         <span>100% Canadian Owned & Operated</span> · <span>Canadian Data Residency Guaranteed</span>
       </div>
 
